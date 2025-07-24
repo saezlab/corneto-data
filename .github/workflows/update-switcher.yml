@@ -1,0 +1,35 @@
+name: Update switcher.json
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - corneto_updated
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout switcher repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run switcher generator
+        run: |
+          python generate_switcher.py \
+            --repo-url https://github.com/saezlab/corneto.git \
+            --base-url https://saezlab.github.io/corneto \
+            --output switcher.json
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add switcher.json
+          if git diff --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: update switcher.json"
+            git push
+          fi
