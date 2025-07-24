@@ -15,21 +15,24 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Ensure assets/docs directory exists
+        run: mkdir -p assets/docs
+
       - name: Run switcher generator
         run: |
-          python generate_switcher.py \
+          python scripts/generate_switcher.py \
             --repo-url https://github.com/saezlab/corneto.git \
-            --base-url https://saezlab.github.io/corneto \
-            --output switcher.json
+            --base-url https://corneto.org \
+            --output assets/docs/switcher.json
 
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add switcher.json
-          if git diff --quiet; then
-            echo "No changes"
+          git add assets/docs/switcher.json
+          if git diff --cached --quiet; then
+            echo "No changes to switcher.json"
           else
-            git commit -m "chore: update switcher.json"
+            git commit -m "chore: update assets/docs/switcher.json"
             git push
           fi
