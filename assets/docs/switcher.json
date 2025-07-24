@@ -1,18 +1,33 @@
 [
   {
-    "name": "v1.0.0-beta.0 (latest)",
-    "version": "v1.0.0-beta.0",
-    "url": "https://corneto.org/latest/"
-  },
-  {
-    "name": "v1.0.0-beta.0 (stable)",
-    "version": "v1.0.0-beta.0",
-    "url": "https://corneto.org/stable/",
+    "name": "1.0.0.dev55+8e3a4585",
+    "version": "1.0.0.dev55+8e3a4585",
+    "url": "https://corneto.org/main/",
     "preferred": true
   },
   {
-    "name": "1.0.0-alpha",
-    "version": "1.0.0-alpha",
+    "name": "1.0.0.dev54+4db02e04",
+    "version": "1.0.0.dev54+4db02e04",
+    "url": "https://corneto.org/dev/"
+  },
+  {
+    "name": "1.0.0.dev8",
+    "version": "1.0.0.dev8",
+    "url": "https://corneto.org/v1.0.0-dev.8/"
+  },
+  {
+    "name": "1.0.0.dev0",
+    "version": "1.0.0.dev0",
+    "url": "https://corneto.org/1.0.0.dev0/"
+  },
+  {
+    "name": "1.0.0a0",
+    "version": "1.0.0a0",
     "url": "https://corneto.org/1.0.0-alpha/"
+  },
+  {
+    "name": "1.0.0b0",
+    "version": "1.0.0b0",
+    "url": "https://corneto.org/v1.0.0-beta.0/"
   }
 ]
