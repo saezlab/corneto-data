@@ -1,5 +1,11 @@
 [
   {
+    "name": "latest",
+    "version": "latest",
+    "url": "https://corneto.org/latest/",
+    "preferred": true
+  },
+  {
     "name": "1.0.0.dev56+823ad991",
     "version": "1.0.0.dev56+823ad991",
     "url": "https://corneto.org/main/",
