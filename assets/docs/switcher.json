@@ -11,13 +11,23 @@
     "url": "https://corneto.org/latest/"
   },
   {
-    "name": "1.0.0a0",
-    "version": "1.0.0a0",
-    "url": "https://corneto.org/1.0.0-alpha/"
+    "name": "1.0.0b2",
+    "version": "1.0.0b2",
+    "url": "https://corneto.org/v1.0.0-beta.2/"
+  },
+  {
+    "name": "1.0.0b1",
+    "version": "1.0.0b1",
+    "url": "https://corneto.org/v1.0.0-beta.1/"
   },
   {
     "name": "1.0.0b0",
     "version": "1.0.0b0",
     "url": "https://corneto.org/v1.0.0-beta.0/"
+  },
+  {
+    "name": "1.0.0a0",
+    "version": "1.0.0a0",
+    "url": "https://corneto.org/1.0.0-alpha/"
   }
 ]
